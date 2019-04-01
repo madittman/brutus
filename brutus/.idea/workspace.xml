@@ -14,8 +14,8 @@
       <file leaf-file-name="brutus.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/brutus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="120">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -26,8 +26,8 @@
       <file leaf-file-name="Initiate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Initiate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="1339">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -38,8 +38,8 @@
       <file leaf-file-name="FileHarvester.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/FileHarvester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+            <state relative-caret-position="499">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -50,8 +50,8 @@
       <file leaf-file-name="PipelineController.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/PipelineController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
+            <state relative-caret-position="484">
+              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -62,8 +62,8 @@
       <file leaf-file-name="Pipeline.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Pipeline.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="394">
+              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -74,8 +74,8 @@
       <file leaf-file-name="core.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/core.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1057">
-              <caret line="178" column="42" selection-start-line="178" selection-start-column="42" selection-end-line="178" selection-end-column="42" />
+            <state relative-caret-position="499">
+              <caret line="386" selection-start-line="386" selection-end-line="386" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -86,8 +86,8 @@
       <file leaf-file-name="stages.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/stages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="484">
+              <caret line="368" lean-forward="true" selection-start-line="368" selection-end-line="368" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -147,12 +147,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/lib/DiskImageSampler.py" />
-        <option value="$PROJECT_DIR$/lib/core.py" />
         <option value="$PROJECT_DIR$/lib/PipelineController.py" />
+        <option value="$PROJECT_DIR$/lib/stages.py" />
         <option value="$PROJECT_DIR$/lib/Pipeline.py" />
+        <option value="$PROJECT_DIR$/lib/core.py" />
         <option value="$PROJECT_DIR$/lib/FileHarvester.py" />
         <option value="$PROJECT_DIR$/lib/Initiate.py" />
-        <option value="$PROJECT_DIR$/lib/stages.py" />
         <option value="$PROJECT_DIR$/brutus.py" />
       </list>
     </option>
@@ -495,38 +495,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Pipeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="394">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/PipelineController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/FileHarvester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/core.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1057">
-          <caret line="178" column="42" selection-start-line="178" selection-start-column="42" selection-end-line="178" selection-end-column="42" />
+        <state relative-caret-position="499">
+          <caret line="386" selection-start-line="386" selection-end-line="386" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
@@ -535,8 +515,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/stages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="484">
+          <caret line="368" lean-forward="true" selection-start-line="368" selection-end-line="368" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/PipelineController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/FileHarvester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
@@ -545,8 +545,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Initiate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="1339">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -555,8 +555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/brutus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state relative-caret-position="120">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
