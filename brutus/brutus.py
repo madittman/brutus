@@ -9,4 +9,3 @@ if __name__ == '__main__':
     init = Initiate("paths.cfg")
     # Create disk image folder in upper directory
     init.start_sampler()
-    #Test
