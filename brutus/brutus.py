@@ -1,5 +1,4 @@
 from lib.Initiate import Initiate
-import configparser
 
 
 if __name__ == '__main__':

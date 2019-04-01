@@ -7,5 +7,5 @@
     {"stages":[ {"File":[]}, {"SaveHashes":[]}, {"Noise":[3000]}, {"DiskImage":[]} ] }
     ],
     
-    "sampler":{"size":[10], "merge":[false]}
+    "sampler":{"size":[10], "merge":[true]}
 }
