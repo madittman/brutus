@@ -1,0 +1,11 @@
+{
+    "harvester": ["JPEG", "ELF", "PDF"],
+    
+    "pipelines":[
+    {"stages":[ {"FileJPEG":[]}, {"HeaderJPEG":[]}, {"Split":[2000]}, {"SaveHashes":[]}, {"Noise":[1000]}, {"DiskImage":[]} ] },
+    {"stages":[ {"FileELF":[]}, {"Split":[]}, {"SaveHashes":[]}, {"DiskImage":[]} ] },
+    {"stages":[ {"File":[]}, {"SaveHashes":[]}, {"Noise":[3000]}, {"DiskImage":[]} ] }
+    ],
+    
+    "sampler":{"size":[10], "merge":[true]}
+}

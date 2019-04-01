@@ -1,0 +1,9 @@
+{
+    "harvester": ["JPEG"],
+    
+    "pipelines":[
+    {"stages":[ {"FileJPEG":[]}, {"SaveHashes":[]}, {"DiskImage":[]} ] }
+    ],
+    
+    "sampler":{"size":[1000], "merge":[true]}
+}
