@@ -108,10 +108,7 @@ The *sampler* section takes two parameters for the *Sampler*. First, the size of
 
 ### Framework Extensions
 
-In order to extend the framework by a *Harvester* class, only the method *run()* needs to be implemented. The abstract *Harvester* class just comes with a list called *crop* which is used to collect the names of the harvested data objects.
-
-It also knows the pipelines by the dictionary pipeline_by_file_type!!!
-
+In order to extend the framework by a *Harvester* class, only the method *run()* needs to be implemented. The abstract *Harvester* class just comes with a list called *crop* which is used to maintain a the names of the harvested data objects.
 <br />
 
 
