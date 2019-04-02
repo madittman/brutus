@@ -1,6 +1,5 @@
 import magic
 import os
-import time
 from glob import iglob
 from .core import Harvester, pipeline_by_file_type
 
