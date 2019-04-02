@@ -18,7 +18,7 @@ pip install python-libmagic
 
 ## Deployment
 
-The purpose of this framework is to generate synthetic carving images that can be later examined by file carvers. One needs to select some input files which are then processed in pipelines. The processed file contents are stored on the disk. These can then be packed into a carving image.
+The purpose of this framework is to generate synthetic carving images that can be later examined by file carvers. One needs to select some input files which are then processed in pipelines. The processed file contents are stored on the disk. These can then be packed into a carving image. A text file (called *truth map*) is also generated which indicates a list of the file contents and their offsets inside the carving image.
 
 ### Main Components
 
@@ -45,9 +45,11 @@ The *Harvester* class is a component that searches a folder for data objects and
 
 #### PipelineController
 
-The *PipelineController* class is used to start the process of the pipelines.
+The *PipelineController* class is used to start the process of the pipelines. It knows the *Harvester* and all the necessary pipelines for the processing. It implements the producer-consumer pattern where the *Harvester* is the producer and the pipelines are the consumers. A pipeline can only process the files of one specific data type but all pipelines can work in parallel.
 
 #### Sampler
+
+The *Sampler* class is used to generate carving images out of the results of the pipeline processing. It is an abstract class but a concrete *DiskImageSampler* for generating disk images is already implemented. The *Sampler* also has a method for generating the *truth map* which is put into the same folder as the carving image.
 
 #### Stage
 
