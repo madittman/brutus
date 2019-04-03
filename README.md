@@ -1,6 +1,6 @@
 # Brutus
 
-A framework for generating caring images out of input files.
+A framework for generating carving images out of input files.
 
 ## Getting Started
 
@@ -102,21 +102,20 @@ There are three sections: *harvester*, *pipelines* and *sampler*.
 <br />
 The *harvester* takes a list of the data types it is supposed to collect. In this case, these are *JPEG*, *ELF* and *PDF* files.
 <br />
-The *pipelines* take a list of stages. Each list of stages belongs to one data type and is assigned in the order they are listed in the *harvester* section. The squared brackets behind a stage name are used for optional arguments. In the example, a JPEG file is processed as follows. First, it is read in by the initiating stage *FileJPEG*. Afterwards, the header of the file is removed by *HeaderJPEG*. Then, the file is split into contents of 2000 bytes each since this number is passed as an argument in *Split*. After that, the SHA256 hashes of each file content are saved in a folder on the disk for later purposes. They are finally written to the truth map. This is an important stage and without it, the truth map cannot be generated. The *Noise* stage replaces each 1000th byte with a zero. It also comes with an optional parameter representing the strength of the noise. Finally, the *DiskImage* stage is used to write out the processed file contents to the disk. This stage is necessary since these file contents need to be there for the *Sampler* which packs them into a carving image.
+The *pipelines* take a list of stages. Each list of stages belongs to one data type and is assigned in the order they are listed in the *harvester* section. The squared brackets behind a stage name are used for optional arguments. In the example, a JPEG file is processed as follows.
+<br />
+First, it is read in by the initiating stage *FileJPEG*. Afterwards, the header of the file is removed by *HeaderJPEG*. Then, the file is split into contents of 2000 bytes each since this number is passed as an argument in *Split*. After that, the SHA256 hashes of each file content are saved in a folder on the disk for later purposes. They are finally written to the truth map. This is an important stage and without it, the truth map cannot be generated. The *Noise* stage replaces each 1000th byte by a zero. It also comes with an optional parameter representing the strength of the noise. Finally, the *DiskImage* stage is used to write out the processed file contents to the disk. This stage is necessary since these file contents need to be there for the *Sampler* which packs them into a carving image.
 <br />
 The *sampler* section takes two parameters for the *Sampler*. First, the size of the carving image is set. In this case, these are 10 megabytes. Secondly, it needs to be set wether the file contents are shuffled in the carving image or not. This only makes a difference, if the files have been split up. If *merge* is set to true, all the file contents that belong to one file are merged to one file again and are packed into the carving image sequently. However, if *merge* is set to false, all the file contents are intermingled and packed at random offsets inside the carving image.
 
 ### Framework Extensions
 
-In order to extend the framework by a *Harvester* class, only the method *run()* needs to be implemented. The abstract *Harvester* class just comes with a list called *crop* which is used to collect the names of the harvested data objects.
-
-It also knows the pipelines by the dictionary pipeline_by_file_type!!!
-
+In order to extend the framework by a *Harvester* class, only the method *run()* needs to be implemented. The abstract *Harvester* class just comes with a list called *crop* which is used to collect the names of the harvested data objects. However, the *Harvester* is supposed to know the pipelines by a global dictionary *pipeline_by_file_type* in which the file types are the keys and the pipelines are the values. Every pipeline has its own queue where its data objects are supposed to be put in. Thus, a pipeline is woken up when the *Harvester* puts a new data object into its queue.
 <br />
-
-
-
-
-
-There needs to be a first stage that initiates the processing...
-
+<br />
+In order to define a new *Stage* class, it needs to be inherited by the abstract *Stage* class or by some other class which is a concrete implementation of the *Stage* class. A stage has three methods: *_do_pre()*, *_do_main()* and *_do_post()* but not all three need to be defined. There needs to be a starting stage which is the first element in the linked list which is passed to pipeline. The starting stage has a method *start()* which initiates the processing. Only *File* as well as *FileJPEG* and *FileELF* which are inherited by *File* are implemented as a starting stage.
+<br />
+The order of the stages is of course important. This needs to be kept track of when defining a new stage. For example, the stage *HeaderJPEG* cannot come after the stage *Split* which already splits up the file.
+<br />
+<br />
+In order to extend the framework by a *Sampler* class, the methods *generate_image()* and *fill_truth_map()* need to be defined. There is already a method *_distribute_contents()* implemented which is used to set the offsets of the file contents randomly. In the *DiskImageSampler*, this method is called inside the *generate_image()* method.

@@ -35,8 +35,8 @@
       <file leaf-file-name="core.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/core.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="277">
+              <caret line="193" lean-forward="true" selection-start-line="193" selection-end-line="193" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -44,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DiskImageSampler.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DiskImageSampler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/DiskImageSampler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="238">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -56,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileHarvester.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FileHarvester.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/FileHarvester.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="254">
@@ -71,8 +71,8 @@
       <file leaf-file-name="Pipeline.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Pipeline.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            <state relative-caret-position="53">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -95,8 +95,8 @@
       <file leaf-file-name="stages.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/stages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="325" selection-start-line="325" selection-end-line="325" />
+            <state relative-caret-position="225">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -108,7 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pipelin</find>
       <find>working_path</find>
       <find>_distribute_contents</find>
       <find>_</find>
@@ -138,6 +137,7 @@
       <find>content</find>
       <find>stage</find>
       <find>type</find>
+      <find>distri</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -484,26 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/DiskImageSampler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Pipeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/PipelineController.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -524,10 +504,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/FileHarvester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/stages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="325" selection-start-line="325" selection-end-line="325" />
+        <state relative-caret-position="225">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
@@ -536,20 +536,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/core.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="277">
+          <caret line="193" lean-forward="true" selection-start-line="193" selection-end-line="193" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/FileHarvester.py">
+    <entry file="file://$PROJECT_DIR$/lib/DiskImageSampler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="238">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
